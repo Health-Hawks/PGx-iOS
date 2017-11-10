@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Skh-gl-cCq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="OMg-cU-3Eh">
             <objects>
-                <viewController id="Xzh-iG-L48" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id1" id="Xzh-iG-L48" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9a8-xa-e16">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,17 +32,27 @@
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="Fkj-9l-5Au"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KUd-YX-60b" appends="YES" id="z88-8B-XMe"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="8nd-5V-d4X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMb-X9-yNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="KUd-YX-60b">
+                    <connections>
+                        <segue destination="TIS-N2-ZK9" kind="show" id="mZy-jc-Py4"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2010.4000000000001" y="124.58770614692655"/>
+            <point key="canvasLocation" x="-1671.2" y="124.58770614692655"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bgD-a7-aZ4">
             <objects>
-                <viewController id="TIS-N2-ZK9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id2" id="TIS-N2-ZK9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7N0-jb-l06">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,6 +76,10 @@
                                     </pageControl>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iAX-nH-fk3" appends="YES" id="8EA-f4-okd"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,13 +87,18 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3D-6t-lxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="iAX-nH-fk3">
+                    <connections>
+                        <segue destination="ygo-iZ-MnQ" kind="show" id="jFL-C8-d4m"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1296.8" y="125.4872563718141"/>
+            <point key="canvasLocation" x="-957.60000000000002" y="125.4872563718141"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8uO-EQ-S31">
             <objects>
-                <viewController id="ygo-iZ-MnQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id4" id="ygo-iZ-MnQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="drr-tg-3q3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -103,12 +122,21 @@
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="q0U-3b-axS"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WT7-07-B0a" appends="YES" id="02Q-mM-i7r"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Wd-41-PBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="WT7-07-B0a">
+                    <connections>
+                        <segue destination="cEC-9v-Rge" kind="show" id="cpR-g7-jxT"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-560.79999999999995" y="126.38680659670166"/>
+            <point key="canvasLocation" x="-221.59999999999999" y="126.38680659670166"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="g4f-96-CF9">
@@ -165,6 +193,10 @@
                                     </pageControl>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tLx-fS-Sdh" appends="YES" id="GyN-91-2QI"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -172,8 +204,13 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7aH-GB-qYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="tLx-fS-Sdh">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="Pf0-xt-PFs"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="96.799999999999997" y="124.58770614692655"/>
+            <point key="canvasLocation" x="436" y="124.58770614692655"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -207,6 +244,10 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GOf-sE-t9n" appends="YES" id="oDb-x7-tVE"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -214,8 +255,9 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="GOf-sE-t9n"/>
             </objects>
-            <point key="canvasLocation" x="824.79999999999995" y="123.68815592203899"/>
+            <point key="canvasLocation" x="1164" y="123.68815592203899"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="H7Q-IJ-0HA">
@@ -518,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMG-aC-E33" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="123.68815592203899"/>
+            <point key="canvasLocation" x="1919.2" y="123.68815592203899"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TfW-vY-2B9">
@@ -557,7 +599,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U33-1D-FZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2317.5999999999999" y="124.58770614692655"/>
+            <point key="canvasLocation" x="2656.8000000000002" y="124.58770614692655"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ost-Ed-rTN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Skh-gl-cCq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nua-fF-1nu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xzh-iG-L48" kind="relationship" relationship="rootViewController" id="Xah-aQ-Cgb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fcr-de-zbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2545" y="124"/>
         </scene>
     </scenes>
     <resources>
